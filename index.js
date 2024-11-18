@@ -24,6 +24,14 @@ app.get("/getData",(req,res) => {
     })
 })
 
+app.get("/new",(req,res) => {
+    res.send({
+        test:"this is new data",
+        yes:"you are right",
+        value:"great we did it"
+    })
+})
+
 app.listen(process.env.port,(req,res) => {
     console.log(`port is listening on ${`http://localhost:${process.env.port}`}`);
 })
